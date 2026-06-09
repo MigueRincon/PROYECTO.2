@@ -37,11 +37,11 @@ app.get('/usuarios', (req, res) => {
         { id: 2, nombre: 'Luis' }
     ])
 })
-    */
+
 //  Endpoint 3: usuario por ID (parametro dinamico)
 app.get('/usuarios/:id', (req, res) => {
     const { id } = req.params  //Extraer :id de la URL
     res.json({ id: parseInt(id), nombre: 'Ana' })
-})
+})*/
 
 app.listen(3000, () => console.log('🚀 Servidor en :3000'))
